@@ -1,0 +1,15 @@
+<h1>IRONHACK CINEMA</h1>
+<h3>Click on the movie to check the showtimes!</h3>
+
+<div id="movies-containers">
+
+{{#each response}}
+<div id="movies-cards">
+
+<img src=" {{this.image}} " alt="picture" width="150">
+<h4> {{this.title}} </h4>
+<a href="/movies/{{this._id}}">See more..</a>
+</div>
+
+{{/each}}
+</div>
